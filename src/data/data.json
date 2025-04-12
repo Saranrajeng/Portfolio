@@ -1,0 +1,156 @@
+{
+  "main": {
+    "name": {
+      "first": "Saran",
+      "last": "Raj"
+    },
+    "logo": true,
+    "titles": [
+      "Full-Stack Problem Solver.",
+      "Code Craftsman.",
+      "Real-time App Specialist.",
+      "Frontend Whisperer. Backend Beast.",
+      "Vue.js Enthusiast.",
+      "Socket.io Ninja.",
+      "Tech Stack Explorer.",
+      "Scalable Systems Architect.",
+      "Developer Who Delivers.",
+      "Builder of Digital Experiences."
+    ],
+    "headings": {
+      "about": "About",
+      "skills": "Skills",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    }
+  },
+  "about": {
+    "bio": "I’m a passionate Full-Stack Developer with expertise in building scalable applications. I specialize in Vue.js, Node.js, and creating real-time systems. With over 4+ years of experience, I've delivered projects in HR, IT support, and transportation sectors. I love translating complex problems into clean, maintainable, and efficient solutions. I focus on user-centric design, backend efficiency, and real-time interactivity using tools like Socket.io and Redis. I thrive in fast-paced environments and I’m always learning new technologies.",
+    "tagline": "We don’t just write code — we craft solutions, one happy commit at a time.",
+    "facts": [
+      {
+        "name": "Hometown",
+        "value": "Tamil Nadu, India"
+      },
+      {
+        "name": "Experience",
+        "value": "4+ Years"
+      },
+      {
+        "name": "Specialized In",
+        "value": "Vue.js, Node.js, Socket.io, Rails"
+      },
+      {
+        "name": "Currently Exploring",
+        "value": "AI integrations, Microservices"
+      }
+    ]
+  },
+"skills": {
+  "defaultCategory": "Frontend Development",
+  "categories": [
+    {
+      "category": "Frontend Development",
+      "subtitle": "Crafting user-centric UIs",
+      "faClass": "fas fa-laptop-code",
+      "skillList": [
+        { "name": "Vue.js" },
+        { "name": "JavaScript (ES6+)" },
+        { "name": "HTML5 & CSS3" },
+        { "name": "Tailwind CSS" },
+        { "name": "Vuetify" },
+        { "name": "Vite" }
+      ]
+    },
+    {
+      "category": "Backend Development",
+      "subtitle": "Building scalable backend systems",
+      "faClass": "fas fa-server",
+      "skillList": [
+        { "name": "Node.js" },
+        { "name": "Express.js" },
+        { "name": "Ruby on Rails" },
+        { "name": "Redis" },
+        { "name": "PostgreSQL" },
+        { "name": "MongoDB" }
+      ]
+    },
+    {
+      "category": "Real-Time Systems",
+      "subtitle": "Real-time collaboration & notifications",
+      "faClass": "fas fa-bolt",
+      "skillList": [
+        { "name": "Socket.io" },
+        { "name": "WebSockets" },
+        { "name": "Event-driven architecture" }
+      ]
+    },
+    {
+      "category": "Dev Tools & Others",
+      "subtitle": "Tools I use daily",
+      "faClass": "fas fa-tools",
+      "skillList": [
+        { "name": "Git & GitHub" },
+        { "name": "Docker" },
+        { "name": "Postman" },
+        { "name": "Figma (for UI collaboration)" },
+        { "name": "Agile & Scrum" }
+      ]
+    }
+  ]
+},
+"portfolio": {
+  "defaultFilter": "fullstack",
+  "projects": [
+    {
+      "title": "ZeroTouch Chat",
+      "description": "A real-time internal support chat platform built with Socket.io and Redis for seamless IT assistance.",
+      "image": "zerotouch.png",
+      "link": "https://github.com/your-username/zerotouch-chat",
+      "source": "https://github.com/your-username/zerotouch-chat",
+      "filter": "fullstack"
+    },
+    {
+      "title": "HR Management System",
+      "description": "A complete HR suite featuring employee management, team structures, leave tracking, and insights dashboard.",
+      "image": "agiralogo.png",
+      "link": "https://github.com/your-username/hr-management",
+      "source": "https://github.com/your-username/hr-management",
+      "filter": "fullstack"
+    },
+    {
+      "title": "The15",
+      "description": "An employee pulse survey platform with micro-feedback and anonymous responses for boosting workplace culture.",
+      "image": "agiralogo.png",
+      "link": "https://the15.in",
+      "source": "https://github.com/your-username/the15",
+      "filter": "fullstack"
+    }
+  ]
+},
+  "contact": {
+    "text": "It will be pretty hard to reach me, probably.",
+    "formTitle": "Send Me A Message",
+    "formEndPoint": "https://formkeep.com/p/efc166e50ff6ef9ea06dc6cebc9a8a0a",
+    "city": "Chennai, India",
+    "email": "sraj67487@gmail.com",
+    "phone": "+91 6374634496",
+    "resumeLink": "",
+    "form": true,
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/Saranrajeng",
+        "faClass": "fab fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/saran-raj-g-bb7520223/",
+        "faClass": "fab fa-linkedin"
+      }
+    ]
+  },
+  "footer": {
+    "copyrightText": "All Rights Reserved."
+  }
+}

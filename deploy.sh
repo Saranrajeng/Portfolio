@@ -1,7 +1,15 @@
 #!/bin/bash
-
-# Exit on error
 set -e
+
+# Check if dist folder exists and has files
+if [ -z "$(ls -A dist)" ]; then
+  echo "🚨 dist folder is empty. Running 'NODE_ENV=production npm run build'..."
+  NODE_ENV=production npm run build
+  if [ -z "$(ls -A dist)" ]; then
+    echo "🚨 Build failed or dist folder is still empty. Exiting."
+    exit 1
+  fi
+fi
 
 echo "🔄 Deleting local gh-pages branch if exists..."
 git branch -D gh-pages 2>/dev/null || true

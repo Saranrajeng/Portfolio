@@ -10,7 +10,14 @@ echo "🌿 Creating orphan gh-pages branch..."
 git checkout --orphan gh-pages
 
 echo "🧹 Removing all files except .git, dist/, node_modules/..."
-find . -maxdepth 1 ! -name 'dist' ! -name 'node_modules' ! -name '.git' ! -name '.gitignore' ! -name '.env' ! -name 'deploy.sh' ! -name '.' -exec rm -rf {} +
+find . -mindepth 1 -maxdepth 1 \
+  ! -name '.git' \
+  ! -name '.gitignore' \
+  ! -name '.env' \
+  ! -name 'node_modules' \
+  ! -name 'dist' \
+  ! -name 'deploy.sh' \
+  -exec rm -rf {} +
 
 echo "📂 Copying contents of dist/ to root..."
 cp -r dist/* ./

@@ -134,7 +134,9 @@
 
 <script>
 import data from "../../data/data.json";
-
+const template_id = process.env.VUE_APP_EMAIL_TEMPLATE_ID
+const user_id = process.env.VUE_APP_EMAIL_USER_ID
+const service_id = process.env.VUE_APP_EMAIL_SERVICE_ID
 
 export default {
   name: "Contact",
@@ -154,13 +156,13 @@ export default {
   },
   methods: {
   sendEmail() {
-    window.emailjs.sendForm('service_n6g7qpr', 'template_qs29wio', document.getElementById("contact-form"))
+    window.emailjs.sendForm(service_id, template_id, document.getElementById("contact-form"))
       .then(() => alert("Message sent!"))
       .catch(error => alert("Something went wrong: " + error.text));
   }
 },
 mounted(){
-  window.emailjs.init('DI_W5Muz9YGXS8mxJ');
+  window.emailjs.init(user_id);
 }
 };
 </script>
